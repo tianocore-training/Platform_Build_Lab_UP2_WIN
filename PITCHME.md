@@ -44,7 +44,7 @@ Note:
 @title[Lesson Objective]
 
 ### <p align="center"<span class="gold"   >Platform Build Labs </span></p>
-<span style="font-size:0.9em">Lab Setup and Build for Nt32 or Minnowboard Max/Turbot</span> <br>
+<br>
 <br>
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
@@ -62,17 +62,16 @@ Note:
 ### <p align="right"><span class="gold" >EDK II Platform (UP Squared)</span></p>
 @snap[south-west span-45 ]
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.6em" >Intel<sup>&reg;</sup> Celeron<sup>tm</sup> processor N3350 Series<br> &lpar;Formerly Apollo Lake&rpar;</span></p>
-<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.56em" >Intel<sup>&reg;</sup> Celeron<sup>tm</sup> processor N3350 Series<br> &lpar;Formerly Apollo Lake&rpar;</span></p>
+
 @snapend
 
 
 @snap[south-east span-45 ]
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.6em" >
+<p style="line-height:60%" align="left"><span style="font-size:0.56em" >
 Available from <a href="https://www.aaeon.com/">Aaeon </a> <br> order at: <a href="https://up-shop.org/up-boards/92-up-squared-celeron-duo-core-2gb-memory32gb-emmc.html">here </a>
 </span></p>
-<br>
 @snapend
 
 Note:
@@ -157,14 +156,14 @@ You may already have this driver installed if you do not see a @fa[exclamation-t
 ---?image=/assets/images/slides/Slide8.JPG
 @title[Setup COM port on Host]
 <p style="line-height:80%" align="right"><span class="gold" >@size[1.1em](<b>Setup COM port on Host</b>)</span></p>
-<p style="line-height:40%"><span style="font-size:0.6em"><b>SKIP</b> if you have the FTDI Device driver already installed
+<p style="line-height:60%"><span style="font-size:0.6em"><b>SKIP</b> if you have the FTDI Device driver already installed
 <br> &bull; Right click yellow  @fa[exclamation-triangle gp-bullet-gold ]   and select "Update Driver Software" from the <b>Device Manager menu</b></span></p>
 
 @snap[north-west span-75 ]
 <br>
 <br>
 <br>
-<p style="line-height:40%"><span style="font-size:0.6em">
+<p style="line-height:40%"><span style="font-size:0.6em"><br>
  &bull; Select "Browse my computer for driver software" <br><br>
  &bull; Click the <b>Browse</b>  button – Click @fa[check-square gp-bullet-white] on "Include subfolders"<br><br>
  &bull; Browse to the location of the folder for the FTDI driver<br><br>
@@ -262,28 +261,26 @@ Note:
  
 
 ---?image=assets/images/binary-strings-black2.jpg 
-@title[Lab 3 -Build Max/Turbot Section]
+@title[Lab 3 -Build Up Squared Section]
 <br><br><br><br><br>
 ## <p align="center"><span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build UP Squared</span></p>
 <span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
 
 ---?image=/assets/images/slides/Slide13.JPG
-@title[MAX/Turbot HW]
+@title[Up Squared HW]
 ### <p align="right"><span class="gold" >EDK II Platform (UP Squared)</span></p>
 @snap[south-west span-45 ]
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.6em" >Intel<sup>&reg;</sup> Celeron<sup>tm</sup> processor N3350 Series<br> &lpar;Formerly Apollo Lake&rpar;</span></p>
-<br>
+<p style="line-height:60%" align="left"><span style="font-size:0.56em" >Intel<sup>&reg;</sup> Celeron<sup>tm</sup> processor N3350 Series<br> &lpar;Formerly Apollo Lake&rpar;</span></p>
 @snapend
 
 
 @snap[south-east span-45 ]
 <br>
-<p style="line-height:60%" align="left"><span style="font-size:0.6em" >
+<p style="line-height:60%" align="left"><span style="font-size:0.56em" >
 Available from <a href="https://www.aaeon.com/">Aaeon </a> <br> order at: <a href="https://up-shop.org/up-boards/92-up-squared-celeron-duo-core-2gb-memory32gb-emmc.html">here </a>
 </span></p>
-<br>
 @snapend
 
 Note:
@@ -331,11 +328,11 @@ $ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 ```
    FW 
     - PlatformBuildLab
-       - iasl				                    - Asl Compiler 
+       - iasl				                   - Asl Compiler 
        - FTDI-Driver		                    - Serial / USB cables 
        - MV3                                    - UP Squared Source for the Labs
        - FirmwareUpdateX64.efi                  - UEFI App to flash
-	   - TeraTerm			                    - Terminal app
+	   - TeraTerm			                   - Terminal app
 	   
 	   . . .
 ```
@@ -367,16 +364,16 @@ NASM<br>
 @snap[south-west span-25 ]
 <p style="line-height:40%" align="left"><span style="font-size:0.55em">
 <b>Directories:</b><br>&nbsp;&nbsp;
-&bull;MV3<br>&nbsp;&nbsp;
-&bull;iasl<br>&nbsp;&nbsp;
-&bull;FTDI-Driver<br>&nbsp;&nbsp;
-&bull;Nasm<br>&nbsp;&nbsp;
-&bull;TeraTerm
+&bull;&nbsp;MV3<br>&nbsp;&nbsp;
+&bull;&nbsp;iasl<br>&nbsp;&nbsp;
+&bull;&nbsp;FTDI-Driver<br>&nbsp;&nbsp;
+&bull;&nbsp;Nasm<br>&nbsp;&nbsp;
+&bull;&nbsp;TeraTerm
 </snap></p>
 <br>
 @snapend
 
-@snap[south-east span-80 ]
+@snap[south-east span-85 ]
 <p style="line-height:40%" align="left"><span style="font-size:0.55em"><font color="yellow">
 <br>&nbsp;&nbsp;
 &hyphen;&nbsp;&nbsp;UP Squared Project source code<br>&nbsp;&nbsp;
@@ -411,9 +408,9 @@ Directory `C:\PlatformBuildLab_FW\FW\PlatformBuildLab` from Download or zip
 <br>
 <p style="line-height:70%"><span style="font-size:0.8em">
 @size[1.5em](<font color="#87E2A9"> &#10102;</font>) &nbsp; Copy `\Nasm` Folder to `C:\`<br><br><br>
-@size[1.5em](<font color="#87E2A9"> &#10103;</font>) &nbsp; Copy `\iasl` Folder to<span style="font-size:0.5em"><br>
- `C:\FW\MV3\edk2-platforms\Platform\BroxtonPlatformPkg\Common\Tools\Iasl</span><br><br>
-@size[1.5em](<font color="#87E2A9"> &#10104;</font>) &nbsp; Install Python 2.7.10 from <a href=""> link</a></span><span style="font-size:0.5em"><br>
+@size[1.5em](<font color="#87E2A9"> &#10103;</font>) &nbsp; Copy `\iasl` Folder to<span style="font-size:0.65em"><br>
+ `C:\FW\MV3\edk2-platforms\Platform\BroxtonPlatformPkg<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\Common\Tools\Iasl`</span><br><br>
+@size[1.5em](<font color="#87E2A9"> &#10104;</font>) &nbsp; Install Python 2.7.10 from <a href=""> link</a></span><span style="font-size:0.5em"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &lpar;if not already installed&rpar;
 </span></p>
 
@@ -494,7 +491,7 @@ Slide says it all
 ---?image=/assets/images/slides/Slide22.JPG
 @title[Open a VS Command Prompt]
 ### <p align="right"><span class="gold" >Open a VS Command Prompt </span></p>
-<p style="line-height:80%" align="left"><span style="font-size:0.8em">Follow Steps from <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Lab/master#/2">here</a> to Pin the Visual Studio Command Prompt to the Windows Task Bar <br>
+<p style="line-height:80%" align="left"><span style="font-size:0.8em">Follow Steps from <a href="https://gitpitch.com/tianocore-training/Platform_Build_Win_Lab/master#/2">here</a> to Pin the Visual Studio Command Prompt to the Windows Task Bar <br><br>
 @size[1.25em](<font color="yellow"> &#10102;</font>)&nbsp;&nbsp;Open a Visual Studio Command Prompt<span></p>
 
 
@@ -508,8 +505,8 @@ Note:
 <p style="line-height:80%"><span style="font-size:0.8em">Many Platform have a bash or bat script file to pre or post process the EDK II build process</span></p>
 
 <p style="line-height:70%"><span style="font-size:0.7em">For UP Squared : `BuildBIOS.bat or BuildBIOS.sh` calls: <br></span>
-<span style="font-size:0.7em"><Example:<br>
-&nbsp;BuildIFWI from the plaform package directory `.. Platform/BroxtonPlatformPkg` <br>
+<span style="font-size:0.7em"><br>
+&nbsp;`BuildIFWI` from the platform package directory `.. Platform/BroxtonPlatformPkg` <br>
 &nbsp;&nbsp;&ndash; pre build processing <br>
 &nbsp;&nbsp;&ndash;  calls `BuildBxtBios` - a platform script to preform the EDK II `build` <br> 
 &nbsp;&nbsp;&ndash; determines date <br>
@@ -538,11 +535,9 @@ From the VS command Prompt ... Enter:<br>
 &nbsp;BuildBIOS.bat /J /UP /A /x64 /vs@color[cyan](<i>nn</i> ) Broxton Debug&nbsp;&nbsp;</span></font></p>
 
 @snap[south-east span-50 ]
-<p style="line-height:80%" align="left"><span style="font-size:0.5em">
+<p style="line-height:80%" align="left"><span style="font-size:0.45em">
 Where @color[cyan](<i>`nn`</i> ) is the Visual Studio year version
 </span></p>
-<br>
-<br>
 @snapend
 
 
@@ -640,14 +635,14 @@ Also notice the BUILD DEFINE Statements from the file:  DefineAtBuildMacros.dsc
 
 <p style="line-height:70%"><span style="font-size:0.7em">For UP Squared : </span></p>
   <ul style="list-style-type:none; line-height:0.7;">
-    <li><span style="font-size:0.7em"> Build Switched &lpar<i>dynamic</i>&rpar: </span></li>
+    <li><span style="font-size:0.7em"> Build Switched &lpar;<i>dynamic</i>&rpar; </span></li>
 	<ul style="list-style-type:none; line-height:0.7;">
-		<li><span style="font-size:0.7em">`DefineAtBuildMacros.dsc ` - Updated from `BuildBIOS` command line</span></li>
-		<li><span style="font-size:0.7em"> `PlatformDsc/BuildOptionsEDKII.dsc ` - Like PCDs on command line</span></li>
+		<li><span style="font-size:0.6em">`DefineAtBuildMacros.dsc ` - Updated from `BuildBIOS` command line</span></li>
+		<li><span style="font-size:0.6em"> `PlatformDsc/BuildOptionsEDKII.dsc ` - Like PCDs on command line</span></li>
 	</ul>	
     <li><span style="font-size:0.7em">EDK II feature Options  </span></li>
  	<ul style="list-style-type:none; line-height:0.7;">
-		<li><span style="font-size:0.7em">`PlatformDsc/Defines.dsc ` - Manually update before build command line</span></li>
+		<li><span style="font-size:0.6em">`PlatformDsc/Defines.dsc ` - Manually update before build command line</span></li>
 	</ul>	
 
   </ul>
@@ -728,7 +723,7 @@ Note:
 - The EDK II build generates multiple firmware volumes, which are combined in the .BIN image
 - typically the platform script will call a stitching process to combine all the images together in  post processing after the EDK II build
 
----?image=/assets/images/slides/Slide55_1.JPG
+---
 @title[Flash onto the UP Squared]
 ### <p align="right"><span class="gold" >Flashing the New BIOS</span></p>
 @snap[north-west span-100  ]
@@ -741,10 +736,10 @@ Note:
 <br>
 1.  <span style="font-size:0.85em" >&nbsp;&nbsp;Access UP Squared Binary image file from build folder</span>
   - <span style="font-size:0.5em" >`C:\FW\MV3\edk2-platforms\Platform\BroxtonPlatformPkg\Common\Tools\Stitch`</span>
-  - <span style="font-size:0.75em" >DEBUG 	UPBOARDA.X64.D01.0071._date_.bin</span>
-  - <span style="font-size:0.75em" >RELEASE	UPBOARDA.X64.R01.0071._date_.bin</span>
+  - <span style="font-size:0.65em" >DEBUG 	UPBOARDA.X64.D01.0071._date_.bin</span>
+  - <span style="font-size:0.65em" >RELEASE	UPBOARDA.X64.R01.0071._date_.bin</span>
 2. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy BIN files to a USB Thumb drive</span>
-3. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb &nbsp;&nbsp;drive from `$.../FW/PlatformBuildLab`</span>
+3. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb &nbsp;&nbsp;drive from @size[.5em](`.../FW/PlatformBuildLab`)</span>
 4. <span style="font-size:0.85em" >&nbsp;&nbsp;Reset the UP Squared board and be prepared to type "F2" to enter System Setup</span>
 
 Note:
@@ -760,11 +755,11 @@ Note:
 ---?image=/assets/images/slides/Slide31.JPG
 @title[Flash onto the UP Squared 02]
 ### <p align="right"><span class="gold" >Flashing the New BIOS</span></p>
-<span style="font-size:0.85em" >5. &nbsp;&nbsp;Set "`BIOS Lock`" to "`Disable`" in the Platform System Setup by the following:</span>
-<ul style="list-style-type:none; line-height:0.7;">
-  <li> <span style="font-size:0.7em" >Inside Setup go to "`Device Manager`"  &rarr;   "`System Setup`" &rarr; "`South Cluster Configuration`" &rarr;  "`Miscellaneous Configuration`"  </span></li>
-  <li> <span style="font-size:0.7em" >Open "`BIOS Lock`" and select "`Disable`"  </span></li>
-  <li> <span style="font-size:0.7em" >Press "`F10`"  to save and then reboot</span></li>
+<span style="font-size:0.75em" >5. &nbsp;&nbsp;Set "`BIOS Lock`" to "`Disable`" in the Setup by the following:</span>
+<ul style="list-style-type:none; line-height:0.6;">
+  <li> <span style="font-size:0.6em" >Inside Setup go to "`Device Manager`"  &rarr;   "`System Setup`" &rarr; "`South Cluster Configuration`" &rarr;  "`Miscellaneous Configuration`"  </span></li>
+  <li> <span style="font-size:0.6em" >Open "`BIOS Lock`" and select "`Disable`"  </span></li>
+  <li> <span style="font-size:0.6em" >Press "`F10`"  to save and then reboot</span></li>
 </ul>
 
 
@@ -777,15 +772,13 @@ the platform setup is reached by typing F2 on a reboot
 @title[Flash onto the UP Squared  03]
 ### <p align="right"><span class="gold" >Flashing the New BIOS</span></p>
 
-<p style="line-height:70%"><span style="font-size:0.85em" >6.&nbsp;&nbsp;Boot into the UEFI Shell  then  type "FS0:"&nbsp;<br>7.&nbsp;&nbsp;Run update `.efi` utility with either BIN file </span> <span style="font-size:0.65em" >&lpar;<i>Note</i> the “TAB” Key <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will fill out the command line for you &rpar;</span></p>
+<p style="line-height:80%"><span style="font-size:0.85em" >6.&nbsp;&nbsp;Boot into the UEFI Shell  then  type "FS0:"&nbsp;<br>7.&nbsp;&nbsp;Run update `.efi` utility with either BIN file </span> <span style="font-size:0.6em" >&lpar;<i>Note</i> the “TAB” Key <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will fill out the command line for you &rpar;</span></p>
 
 ```
   FS0:\> FirmwareUpdateX64.efi UPBOARDA.X64.0071.R01.1809030927.bin
  
 ```
-<br>
 <span style="font-size:0.75em" >Wait for the new firmware update to finish</span>
-<br>
 <br>
 <br>
 <br>
