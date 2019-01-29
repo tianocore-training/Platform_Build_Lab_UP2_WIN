@@ -409,7 +409,7 @@ Directory `C:\PlatformBuildLab_FW\FW\PlatformBuildLab` from Download or zip
 <p style="line-height:70%"><span style="font-size:0.8em">
 @size[1.5em](<font color="#87E2A9"> &#10102;</font>) &nbsp; Copy `\Nasm` Folder to `C:\`<br><br><br>
 @size[1.5em](<font color="#87E2A9"> &#10103;</font>) &nbsp; Copy `\iasl` Folder to<span style="font-size:0.65em"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- `C:\FW\MV3\edk2-platforms\Platform\BroxtonPlatformPkg`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`\Common\Tools\Iasl`</span><br><br>
+ `C:\FW\MV3\edk2-platforms\Platform\`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`BroxtonPlatformPkg\Common\Tools\Iasl`</span><br><br>
 @size[1.5em](<font color="#87E2A9"> &#10104;</font>) &nbsp; Install Python 2.7.10 from <a href=""> link</a></span><span style="font-size:0.55em"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &lpar;if not already installed&rpar;
 </span></p>
@@ -506,7 +506,7 @@ Note:
 
 <p style="line-height:70%"><span style="font-size:0.7em">For UP Squared : `BuildBIOS.bat or BuildBIOS.sh` calls: <br></span>
 <span style="font-size:0.7em"><br>
-&nbsp;&nbsp;`BuildIFWI` from the platform package directory <br>&nbsp;&nbsp;&ndash;&nbsp;&nbsp;&ndash;`.. Platform/BroxtonPlatformPkg` <br>
+&nbsp;&nbsp;`BuildIFWI` from the platform package directory <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.. Platform/BroxtonPlatformPkg` <br>
 &nbsp;&nbsp;&nbsp;&ndash; pre build processing <br>
 &nbsp;&nbsp;&nbsp;&ndash;  calls `BuildBxtBios` - a platform script to preform the EDK II `build` <br> 
 &nbsp;&nbsp;&nbsp;&ndash; determines date <br>
@@ -666,6 +666,8 @@ From the VS command Prompt ... Enter:<br>
 
 
 @snap[north-east span-30  fragment]
+<br>
+<br>
 <br>
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.8em"><br></span></p>
