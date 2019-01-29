@@ -1,7 +1,7 @@
 ---?image=assets/images/gitpitch-audience.jpg
 @title[Platform Build Win Lab]
 <br><br>
-<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/Platform_Build_Win_Lab/master#/</span>
+<span style="font-size:0.75em" >This slide deck has moved to:  https://gitpitch.com/tianocore-training/Platform_Build_Lab_UP2_Win/master#/</span>
 <br><br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
@@ -137,11 +137,11 @@ Under the "<b>Other devices</b>" category you will see a yellow  @fa[exclamation
 Note:
 
 - Hardware:
-  - System Under Test (SUT) – MinnowBoard Max
+  - System Under Test (SUT) – UP Squared
   - USB to 3.3V TTL Cable  (6 pin to USB Type A)
   -  5V power supply
 
-- Connect the USB w/ 6 pin header to SUT (MAX)
+- Connect the USB w/ 6 pin header to SUT 3 pin connected to (UP Squared) via 10 Pin connected using jumper wires (black, red, white)
 
 - Connect the USB Type A connector to Host (Laptop)
 
@@ -154,16 +154,16 @@ Note:
 You may already have this driver installed if you do not see a @fa[exclamation-triangle gp-bullet-gold ]   warning under "<b>Other devices</b>" 
 
 ---?image=/assets/images/slides/Slide8.JPG
-@title[Setup COM port on Host]
-<p style="line-height:80%" align="right"><span class="gold" >@size[1.1em](<b>Setup COM port on Host</b>)</span></p>
-<p style="line-height:60%"><span style="font-size:0.6em"><b>SKIP</b> if you have the FTDI Device driver already installed
-<br> &bull; Right click yellow  @fa[exclamation-triangle gp-bullet-gold ]   and select "Update Driver Software" from the <b>Device Manager menu</b></span></p>
+@title[Install FTDT Device Driver on Host]
+<p style="line-height:80%" align="right"><span class="gold" >@size[1.1em](<b>Install FTDT Device Driver on Host</b>)</span></p>
+<p style="line-height:60%"><span style="font-size:0.6em">@color[yellow](<b>SKIP</b>) if you have the FTDI Device driver already installed
+<br><br> &bull; Right click yellow  @fa[exclamation-triangle gp-bullet-gold ]   and select "Update Driver Software" from the <b>Device Manager menu</b></span></p>
 
 @snap[north-west span-75 ]
 <br>
 <br>
 <br>
-<p style="line-height:40%"><span style="font-size:0.6em"><br>
+<p style="line-height:40%"><span style="font-size:0.6em"><br><br>
  &bull; Select "Browse my computer for driver software" <br><br>
  &bull; Click the <b>Browse</b>  button – Click @fa[check-square gp-bullet-white] on "Include subfolders"<br><br>
  &bull; Browse to the location of the folder for the FTDI driver<br><br>
@@ -235,7 +235,7 @@ Note:
 
 
 ---?image=/assets/images/slides/Slide10.JPG
-@title[Power on MinnowBoard MAX]
+@title[Power on UP Squared]
 <p style="line-height:80%" align="right"><span class="gold" >@size[1.1em](<b>Power on UP Squared</b>)</span></p>
 @snap[north-west span-100 ]
 <br>
@@ -340,7 +340,7 @@ $ git clone https://github.com/tianocore-training/PlatformBuildLab_FW.git
 Note:
 
 ---?image=/assets/images/slides/Slide17.JPG
-@title[MinnowBoard MAX Lab Setup]
+@title[UP Squared Lab Setup]
 ### <p align="right"><span class="gold" >UP Squared Lab Setup</span></p>
 @snap[north-west span-70 ]
 <br>
@@ -408,9 +408,9 @@ Directory `C:\PlatformBuildLab_FW\FW\PlatformBuildLab` from Download or zip
 <br>
 <p style="line-height:70%"><span style="font-size:0.8em">
 @size[1.5em](<font color="#87E2A9"> &#10102;</font>) &nbsp; Copy `\Nasm` Folder to `C:\`<br><br><br>
-@size[1.5em](<font color="#87E2A9"> &#10103;</font>) &nbsp; Copy `\iasl` Folder to<span style="font-size:0.65em"><br>
- `C:\FW\MV3\edk2-platforms\Platform\BroxtonPlatformPkg<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\Common\Tools\Iasl`</span><br><br>
-@size[1.5em](<font color="#87E2A9"> &#10104;</font>) &nbsp; Install Python 2.7.10 from <a href=""> link</a></span><span style="font-size:0.5em"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+@size[1.5em](<font color="#87E2A9"> &#10103;</font>) &nbsp; Copy `\iasl` Folder to<span style="font-size:0.65em"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ `C:\FW\MV3\edk2-platforms\Platform\BroxtonPlatformPkg`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`\Common\Tools\Iasl`</span><br><br>
+@size[1.5em](<font color="#87E2A9"> &#10104;</font>) &nbsp; Install Python 2.7.10 from <a href=""> link</a></span><span style="font-size:0.55em"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &lpar;if not already installed&rpar;
 </span></p>
 
@@ -502,16 +502,16 @@ Note:
 <p align="right"><span class="gold" >@size[1.1em](<b>Platform Build Scripts</b>)</span></p>
 
 @box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" align="center"><span style="font-size:0.8em">Platform Build Scripts<br>&nbsp; </span></p>)
-<p style="line-height:80%"><span style="font-size:0.8em">Many Platform have a bash or bat script file to pre or post process the EDK II build process</span></p>
+<p style="line-height:80%"><span style="font-size:0.8em">Many Platforms have a bash or bat script file to pre or post process the EDK II build process</span></p>
 
 <p style="line-height:70%"><span style="font-size:0.7em">For UP Squared : `BuildBIOS.bat or BuildBIOS.sh` calls: <br></span>
 <span style="font-size:0.7em"><br>
-&nbsp;`BuildIFWI` from the platform package directory `.. Platform/BroxtonPlatformPkg` <br>
-&nbsp;&nbsp;&ndash; pre build processing <br>
-&nbsp;&nbsp;&ndash;  calls `BuildBxtBios` - a platform script to preform the EDK II `build` <br> 
-&nbsp;&nbsp;&ndash; determines date <br>
-&nbsp;&nbsp;&ndash; board ID<br>
-&nbsp;&nbsp;&ndash; post build stitching<br>
+&nbsp;&nbsp;`BuildIFWI` from the platform package directory <br>&nbsp;&nbsp;&ndash;&nbsp;&nbsp;&ndash;`.. Platform/BroxtonPlatformPkg` <br>
+&nbsp;&nbsp;&nbsp;&ndash; pre build processing <br>
+&nbsp;&nbsp;&nbsp;&ndash;  calls `BuildBxtBios` - a platform script to preform the EDK II `build` <br> 
+&nbsp;&nbsp;&nbsp;&ndash; determines date <br>
+&nbsp;&nbsp;&nbsp;&ndash; board ID<br>
+&nbsp;&nbsp;&nbsp;&ndash; post build stitching<br>
 </span></p>
 
 Note:
@@ -635,12 +635,12 @@ Also notice the BUILD DEFINE Statements from the file:  DefineAtBuildMacros.dsc
 
 <p style="line-height:70%"><span style="font-size:0.7em">For UP Squared : </span></p>
   <ul style="list-style-type:none; line-height:0.7;">
-    <li><span style="font-size:0.7em"> Build Switched &lpar;<i>dynamic</i>&rpar; </span></li>
+    <li><span style="font-size:0.7em">@color[yellow]( Build Switched )&lpar;<i>dynamic</i>&rpar; </span></li>
 	<ul style="list-style-type:none; line-height:0.7;">
 		<li><span style="font-size:0.6em">`DefineAtBuildMacros.dsc ` - Updated from `BuildBIOS` command line</span></li>
 		<li><span style="font-size:0.6em"> `PlatformDsc/BuildOptionsEDKII.dsc ` - Like PCDs on command line</span></li>
 	</ul>	
-    <li><span style="font-size:0.7em">EDK II feature Options  </span></li>
+    <li><span style="font-size:0.7em">@color[yellow](EDK II feature Options)  </span></li>
  	<ul style="list-style-type:none; line-height:0.7;">
 		<li><span style="font-size:0.6em">`PlatformDsc/Defines.dsc ` - Manually update before build command line</span></li>
 	</ul>	
@@ -739,7 +739,7 @@ Note:
   - <span style="font-size:0.65em" >DEBUG 	UPBOARDA.X64.D01.0071._date_.bin</span>
   - <span style="font-size:0.65em" >RELEASE	UPBOARDA.X64.R01.0071._date_.bin</span>
 2. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy BIN files to a USB Thumb drive</span>
-3. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb &nbsp;&nbsp;drive from @size[.5em](`.../FW/PlatformBuildLab`)</span>
+3. <span style="font-size:0.85em" >&nbsp;&nbsp;Copy </span><span style="font-size:0.65em" >`FirmwareUpdateX64.efi`</span><span style="font-size:0.85em" > to a USB thumb &nbsp;&nbsp;drive from @size[.65em](`.../FW/PlatformBuildLab`)</span>
 4. <span style="font-size:0.85em" >&nbsp;&nbsp;Reset the UP Squared board and be prepared to type "F2" to enter System Setup</span>
 
 Note:
@@ -749,14 +749,14 @@ Note:
   - RELEASE	UPBOARDA.X64.0071.R01._date_.bin
 
 2. Copy BIN files to a USB Thumb drive
-3. Copy MinnowBoard.MAX.FirmwareUpdateX64.efi to a USB thumb drive from $.../FW/PlatformBuildLab
+3. Copy FirmwareUpdateX64.efi to a USB thumb drive from $.../FW/PlatformBuildLab
 4. Reset the UP Squared board and be prepared to type “F2” to enter System Setup 
 
 ---?image=/assets/images/slides/Slide31.JPG
 @title[Flash onto the UP Squared 02]
 ### <p align="right"><span class="gold" >Flashing the New BIOS</span></p>
 <span style="font-size:0.75em" >5. &nbsp;&nbsp;Set "`BIOS Lock`" to "`Disable`" in the Setup by the following:</span>
-<ul style="list-style-type:none; line-height:0.6;">
+<ul style="list-style-type:disc; line-height:0.6;">
   <li> <span style="font-size:0.6em" >Inside Setup go to "`Device Manager`"  &rarr;   "`System Setup`" &rarr; "`South Cluster Configuration`" &rarr;  "`Miscellaneous Configuration`"  </span></li>
   <li> <span style="font-size:0.6em" >Open "`BIOS Lock`" and select "`Disable`"  </span></li>
   <li> <span style="font-size:0.6em" >Press "`F10`"  to save and then reboot</span></li>
