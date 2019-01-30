@@ -466,15 +466,15 @@ Note:
 		/(UDK2018 Directories)
 		/BaseTools (from BaseToolsUDK.tar.gz)
 
-	/edk2-platforms
+	/edk2-platforms  			- BuildBIOS
 
 		/Platform
 
-			/BroxtonPlatformPkg
+			/BroxtonPlatformPkg - BuildIFWI & BuildBxtBios  
 				(Platform Dirs)
 				PlatformPkg.dec
-				PlatformPkg.dsc
 				PlatformPkg.fdf
+				PlatformPkgnn.dsc
 		/Silicon
 
 			/BroxtonSoC
@@ -489,7 +489,7 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.7em"><br><br>
+<p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br>
 Invoke the build script from here
 </span></p>
 @snapend
@@ -502,7 +502,7 @@ Invoke the build script from here
 <br>
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.7em"><br><br>
+<p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br>
 Project platform directory 
 </span></p>
 @snapend
