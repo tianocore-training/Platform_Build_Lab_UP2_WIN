@@ -455,6 +455,47 @@ Note:
 - From the FW/PlatformBuildLab folder, copy and paste folder "`..FW/MV3`" to `C:/FW/MV3`
  
 
+---
+@title[Platform Source Directory Structure]
+### <p align="right"><span class="gold" >Platform Source Directory Structure </span></p>
+```
+/MV3
+	/edk2
+		/(UDK2018 Directories)
+		/BaseTools (from BaseToolsUDK.tar.gz)
+	/edk2-platforms
+		/Platform
+			/BroxtonPlatformPkg
+				(Platform Dirs)
+		/Silicon
+			/BroxtonSoC
+				/BroxtonFspPkg
+				/BroxtonSiPkg
+
+```
+
+@snap[north-east span-95 fragment]
+<br>
+<br>
+Invoke the build script from here
+@snapend
+
+
+@snap[north-east span-95 fragment]
+<br>
+<br>
+<br>
+<br>
+Project platform directory 
+
+@snapend
+
+
+Note:
+-  Platform Source Directory Structure
+   -  Build from /edk2-platform  directory
+   -  Project platform directory is: BroxtonPlatformPkg
+
 
 ---?image=/assets/images/slides/Slide20.JPG
 @title[Platform Source Directory Structure]
