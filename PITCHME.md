@@ -458,16 +458,25 @@ Note:
 ---
 @title[Platform Source Directory Structure]
 ### <p align="right"><span class="gold" >Platform Source Directory Structure </span></p>
-```
-/MV3
+
+```bash
+ /MV3
+
 	/edk2
 		/(UDK2018 Directories)
 		/BaseTools (from BaseToolsUDK.tar.gz)
+
 	/edk2-platforms
+
 		/Platform
+
 			/BroxtonPlatformPkg
 				(Platform Dirs)
+				PlatformPkg.dec
+				PlatformPkg.dsc
+				PlatformPkg.fdf
 		/Silicon
+
 			/BroxtonSoC
 				/BroxtonFspPkg
 				/BroxtonSiPkg
@@ -476,8 +485,9 @@ Note:
 
 @snap[north-east span-95 fragment]
 <br>
-<br>
+<p style="line-height:70%" align="left"><span style="font-size:0.8em"><br>
 Invoke the build script from here
+</span></p>
 @snapend
 
 
@@ -486,8 +496,9 @@ Invoke the build script from here
 <br>
 <br>
 <br>
+<p style="line-height:70%" align="left"><span style="font-size:0.8em"><br>
 Project platform directory 
-
+</span></p>
 @snapend
 
 
