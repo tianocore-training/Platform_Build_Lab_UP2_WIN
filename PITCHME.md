@@ -489,7 +489,9 @@ Note:
 <br>
 <br>
 <br>
-<p style="line-height:70%" align="left"><span style="font-size:0.8em"><br>
+<br>
+<br>
+<p style="line-height:70%" align="left"><span style="font-size:0.7em"><br>
 Invoke the build script from here
 </span></p>
 @snapend
@@ -503,8 +505,7 @@ Invoke the build script from here
 <br>
 <br>
 <br>
-<br>
-<p style="line-height:70%" align="left"><span style="font-size:0.8em"><br>
+<p style="line-height:70%" align="left"><span style="font-size:0.7em"><br>
 Project platform directory 
 </span></p>
 @snapend
