@@ -489,8 +489,6 @@ Note:
 <br>
 <br>
 <br>
-<br>
-<br>
 <p style="line-height:70%" align="left"><span style="font-size:0.7em"><br>
 Invoke the build script from here
 </span></p>
@@ -498,6 +496,7 @@ Invoke the build script from here
 
 
 @snap[north-east span-50 fragment]
+<br>
 <br>
 <br>
 <br>
