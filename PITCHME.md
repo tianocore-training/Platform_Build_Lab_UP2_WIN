@@ -483,13 +483,13 @@ Note:
 
 ```
 
-@snap[north-east span-60 fragment]
+@snap[north-east span-65 fragment]
 <br>
 <br>
 <br>
 <br>
 <br>
-<p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br>
+<p style="line-height:40%" align="left"><span style="font-size:0.7em"><br><br><br>
 Invoke the build script from here
 </span></p>
 @snapend
