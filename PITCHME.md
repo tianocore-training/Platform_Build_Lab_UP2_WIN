@@ -483,7 +483,11 @@ Note:
 
 ```
 
-@snap[north-east span-95 fragment]
+@snap[north-east span-50 fragment]
+<br>
+<br>
+<br>
+<br>
 <br>
 <p style="line-height:70%" align="left"><span style="font-size:0.8em"><br>
 Invoke the build script from here
@@ -491,7 +495,11 @@ Invoke the build script from here
 @snapend
 
 
-@snap[north-east span-95 fragment]
+@snap[north-east span-50 fragment]
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
