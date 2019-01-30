@@ -483,7 +483,8 @@ Note:
 
 ```
 
-@snap[north-east span-65 fragment]
+@snap[north-east span-55 fragment]
+<br>
 <br>
 <br>
 <br>
