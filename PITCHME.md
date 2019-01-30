@@ -466,11 +466,11 @@ Note:
 		/(UDK2018 Directories)
 		/BaseTools (from BaseToolsUDK.tar.gz)
 
-	/edk2-platforms  			- BuildBIOS
+	/edk2-platforms  - BuildBIOS script
 
 		/Platform
 
-			/BroxtonPlatformPkg - BuildIFWI & BuildBxtBios  
+			/BroxtonPlatformPkg 
 				(Platform Dirs)
 				PlatformPkg.dec
 				PlatformPkg.fdf
@@ -483,26 +483,26 @@ Note:
 
 ```
 
-@snap[north-east span-50 fragment]
-<br>
-<br>
-<br>
-<br>
-<br>
-<p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br>
-Invoke the build script from here
-</span></p>
-@snapend
-
-
-@snap[north-east span-50 fragment]
-<br>
+@snap[north-east span-60 fragment]
 <br>
 <br>
 <br>
 <br>
 <br>
 <p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br>
+Invoke the build script from here
+</span></p>
+@snapend
+
+
+@snap[north-east span-60 fragment]
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br><br>
 Project platform directory 
 </span></p>
 @snapend
