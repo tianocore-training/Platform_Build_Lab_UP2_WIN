@@ -489,7 +489,6 @@ Note:
 <br>
 <br>
 <br>
-<br>
 <p style="line-height:40%" align="left"><span style="font-size:0.7em"><br><br>&nbsp;</span></p>
 <p style="line-height:50%" align="left"><span style="font-size:0.7em">
 <font color="yellow">@size[1.1em](&larr;<b>&horbar;&horbar;</b>)Invoke the build script from here</font><br>
