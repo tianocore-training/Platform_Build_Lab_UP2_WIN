@@ -492,7 +492,7 @@ Note:
 <p style="line-height:40%" align="left"><span style="font-size:0.7em"><br><br>&nbsp;</span></p>
 <p style="line-height:50%" align="left"><span style="font-size:0.7em">
 <font color="yellow">@size[1.1em](&larr;<b>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</b>)Invoke the build script from here</font><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](`BuildBIOS` script)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](<i>`BuildBIOS`</i> script)
 </span></p>
 @snapend
 
