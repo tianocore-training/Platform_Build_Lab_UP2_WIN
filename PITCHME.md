@@ -492,7 +492,7 @@ Note:
 <p style="line-height:40%" align="left"><span style="font-size:0.7em"><br><br>&nbsp;</span></p>
 <p style="line-height:50%" align="left"><span style="font-size:0.7em">
 <font color="yellow">@size[1.1em](&larr;<b>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</b>)Invoke the build script from here</font><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](<i>`BuildBIOS`</i> script)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](@color[gray](`BuildBIOS`) script)
 </span></p>
 @snapend
 
@@ -507,8 +507,8 @@ Note:
 <p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br><br>
 <font color="yellow">@size[1.1em](&larr;<b>&horbar;&horbar;</b>)Project platform directory </font><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](&lpar;includes platform build scripts)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](`BuildBxtBios` and `BuildIFWI`)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](  - Called from `BuildBIOS` above &rpar;)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](@color[gray](`BuildBxtBios`) and @color[gray](`BuildIFWI`))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](  - Called from @color[gray](`BuildBIOS`) above &rpar;)
 </span></p>
 @snapend
 
