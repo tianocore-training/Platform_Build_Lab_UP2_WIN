@@ -466,7 +466,7 @@ Note:
 		/(UDK2018 Directories)
 		/BaseTools (from BaseToolsUDK.tar.gz)
 
-	/edk2-platforms  - BuildBIOS script
+	/edk2-platforms  
 
 		/Platform
 
@@ -483,7 +483,7 @@ Note:
 
 ```
 
-@snap[north-east span-55 fragment]
+@snap[north-east span-65 fragment]
 <br>
 <br>
 <br>
@@ -491,7 +491,8 @@ Note:
 <br>
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.7em"><br><br>
-<font color="yellow">@size[1.1em](&larr;<b>&horbar;&horbar;</b>)Invoke the build script from here</font>
+<font color="yellow">@size[1.1em](&larr;<b>&horbar;&horbar;</b>)Invoke the build script from here</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](`BuildBIOS` script)
 </span></p>
 @snapend
 
@@ -506,7 +507,8 @@ Note:
 <p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br><br>
 <font color="yellow">@size[1.1em](&larr;<b>&horbar;&horbar;</b>)Project platform directory </font><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](&lpar;includes platform build scripts)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](`BuildBxtBios` and `BuildIFWI`&rpar;)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](`BuildBxtBios` and `BuildIFWI`)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](  - Called from `BuildBIOS` above &rpar;)
 </span></p>
 @snapend
 
