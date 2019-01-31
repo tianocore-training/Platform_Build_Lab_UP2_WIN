@@ -460,7 +460,7 @@ Note:
 ### <p align="right"><span class="gold" >Platform Source Directory Structure </span></p>
 
 ```bash
- /MV3
+ /MV3 (Work Space Dir)
 
 	/edk2
 		/(UDK2018 Directories)
@@ -517,15 +517,6 @@ Note:
    -  Project platform directory is: BroxtonPlatformPkg
 
 
----?image=/assets/images/slides/Slide20.JPG
-@title[Platform Source Directory Structure]
-### <p align="right"><span class="gold" >Platform Source Directory Structure </span></p>
-
-
-Note:
--  Platform Source Directory Structure
-   -  Build from /edk2-platform  directory
-   -  Project platform directory is: BroxtonPlatformPkg
 
 
 ---
