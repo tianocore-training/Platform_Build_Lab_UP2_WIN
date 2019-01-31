@@ -507,7 +507,7 @@ Note:
 <p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br><br>
 <font color="yellow">@size[1.1em](&larr;<b>&mdash;&mdash;</b>)Project platform directory </font><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](&lpar;includes platform build scripts)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](@color[#87E2A9](`BuildBxtBios`) and @color[#87E2A9](`BuildIFWI`))<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](@color[#87E2A9](`BuildIFWI`) that then calls &nbsp; &rarr;&nbsp; @color[#87E2A9](`BuildBxtBios`))<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](  - Called from @color[#87E2A9](`BuildBIOS`) above &rpar;)
 </span></p>
 @snapend
