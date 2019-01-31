@@ -317,7 +317,7 @@ Note:
 
 ---
 @title[Download UP Squared Lab Source]
-### <p align="right"><span class="gold" >Download UP Squared Lab Source</span></p>
+<p align="right"><span class="gold" >@size[1.1](<b>Download UP Squared Lab Source</b>)</span></p>
 <p style="line-height:80%" align="left"><span style="font-size:0.9em" >Download the PlatformBuildLab_UP2_FW.zip from : </span><br> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/tianocore-training/PlatformBuildLab_UP2_FW/archive/master.zip">github.com PlatformBuildLab_UP2_FW.zip</a></span></p>
 
 <span style="font-size:0.9em" >OR<br>Use `git clone` to download the PlatformBuildLab_UP2_FW<span>
