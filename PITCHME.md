@@ -491,7 +491,7 @@ Note:
 <br>
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.7em"><br><br>
-<font color="yellow">@size[1.1em](&larr;)Invoke the build script from here</font>
+<font color="yellow">@size[1.1em](&larr;&horbar;&horbar;)Invoke the build script from here</font>
 </span></p>
 @snapend
 
@@ -504,7 +504,8 @@ Note:
 <br>
 <br>
 <p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br><br>
-<font color="yellow">@size[1.1em](&larr;)Project platform directory </font>
+<font color="yellow">@size[1.1em](&larr;&horbar;&horbar;)Project platform directory </font><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.8em](&rpar;includes platform scripts `BuildBxtBios` & `BuildIFWI`&lpar;)
 </span></p>
 @snapend
 
