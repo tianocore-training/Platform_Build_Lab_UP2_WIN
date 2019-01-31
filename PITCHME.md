@@ -491,12 +491,12 @@ Note:
 <br>
 <br>
 <p style="line-height:40%" align="left"><span style="font-size:0.7em"><br><br>
-<font color="yellow">@size[1.1em](&larr;&horbar;&horbar;)Invoke the build script from here</font>
+<font color="yellow">@size[1.1em](&larr;<b>&horbar;&horbar;</b>)Invoke the build script from here</font>
 </span></p>
 @snapend
 
 
-@snap[north-east span-60 fragment]
+@snap[north-east span-65 fragment]
 <br>
 <br>
 <br>
@@ -504,8 +504,9 @@ Note:
 <br>
 <br>
 <p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br><br>
-<font color="yellow">@size[1.1em](&larr;&horbar;&horbar;)Project platform directory </font><br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.8em](&rpar;includes platform scripts `BuildBxtBios` & `BuildIFWI`&lpar;)
+<font color="yellow">@size[1.1em](&larr;&horbar;&horbar;)Project platform directory </font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](&lpar;includes platform scripts)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](`BuildBxtBios` & `BuildIFWI`&rpar;)
 </span></p>
 @snapend
 
