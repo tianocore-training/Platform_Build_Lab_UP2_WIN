@@ -410,7 +410,7 @@ Directory `C:\PlatformBuildLab_FW\FW\PlatformBuildLab` from Download or zip
 @size[1.5em](<font color="#87E2A9"> &#10102;</font>) &nbsp; Copy `\Nasm` Folder to `C:\`<br><br><br>
 @size[1.5em](<font color="#87E2A9"> &#10103;</font>) &nbsp; Copy `\iasl` Folder to<span style="font-size:0.65em"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  `C:\FW\MV3\edk2-platforms\Platform\`<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`BroxtonPlatformPkg\Common\Tools\Iasl`</span><br><br>
-@size[1.5em](<font color="#87E2A9"> &#10104;</font>) &nbsp; Install Python 2.7.10 from <a href=""> link</a></span><span style="font-size:0.55em"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+@size[1.5em](<font color="#87E2A9"> &#10104;</font>) &nbsp; Install Python 2.7.10 from <a href="https://www.python.org/downloads/release/python-2710/"> link</a></span><span style="font-size:0.55em"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &lpar;if not already installed&rpar;
 </span></p>
 
@@ -689,7 +689,7 @@ Also notice the BUILD DEFINE Statements from the file:  DefineAtBuildMacros.dsc
 
 <p style="line-height:70%"><span style="font-size:0.7em">For UP Squared : </span></p>
   <ul style="list-style-type:none; line-height:0.7;">
-    <li><span style="font-size:0.7em">@color[yellow]( Build Switched )&lpar;<i>dynamic</i>&rpar; </span></li>
+    <li><span style="font-size:0.7em">@color[yellow]( Build Switches )&lpar;<i>dynamic</i>&rpar; </span></li>
 	<ul style="list-style-type:none; line-height:0.7;">
 		<li><span style="font-size:0.6em">`DefineAtBuildMacros.dsc ` - Updated from `BuildBIOS` command line</span></li>
 		<li><span style="font-size:0.6em"> `PlatformDsc/BuildOptionsEDKII.dsc ` - Like PCDs on command line</span></li>
