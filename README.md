@@ -31,4 +31,4 @@
 # Platform_Build_Lab_UP2_Win
 Build EDK II Platform with Windows and Visual Studio to build Apollo Lake UP Squared board
 
-To see the Slides goto https://gitpitch.com/Laurie0131/Platform_Build_Lab_UP2_Win/master#/
+To see the Slides goto https://gitpitch.com/tianocore-training/Platform_Build_Lab_UP2_Win/master#/
