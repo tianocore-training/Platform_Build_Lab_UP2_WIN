@@ -504,9 +504,9 @@ Note:
 <br>
 <br>
 <p style="line-height:50%" align="left"><span style="font-size:0.7em"><br><br><br><br>
-<font color="yellow">@size[1.1em](&larr;&horbar;&horbar;)Project platform directory </font><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](&lpar;includes platform scripts)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](`BuildBxtBios` & `BuildIFWI`&rpar;)
+<font color="yellow">@size[1.1em](&larr;<b>&horbar;&horbar;</b>)Project platform directory </font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](&lpar;includes platform build scripts)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@size[.7em](`BuildBxtBios` and `BuildIFWI`&rpar;)
 </span></p>
 @snapend
 
