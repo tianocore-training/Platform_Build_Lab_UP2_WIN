@@ -4,7 +4,7 @@
 <br><br><br>
 ## <span class="gold"   >UEFI & EDK II Training</span>
 
-#### Platform Build Windows Lab 
+#### Platform Build for UP Squared Windows Lab 
 
 <br>
 <span style="font-size:0.75em" ><a href='http://www.tianocore.org'>tianocore.org</a></span>
