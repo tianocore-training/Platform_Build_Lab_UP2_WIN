@@ -54,7 +54,7 @@ Note:
 @title[Setup UP2 HW Section]
 <br><br><br><br><br>
 ## <span class="gold"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Platform HW Setup</span>
-<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup hardware for UP Squared </span>
+<span style="font-size:0.9em" > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Setup hardware for the Broxton - UP Squared </span>
 
 ---?image=/assets/images/slides/Slide4.JPG
 @title[UP2 HW]
@@ -74,6 +74,15 @@ Available from <a href="https://www.aaeon.com/">Aaeon </a> <br> order at: <a hre
 @snapend
 
 Note:
+
+This lab shows the build process for an actual platform – UP Squared
+https://www.google.com/imgres?imgurl=https%3A%2F%2Fksr-ugc.imgix.net%2Fassets%2F014%2F192%2F390%2Fb48b13570b839fdb254d046a4e5fe703_original.png%3Fixlib%3Drb-1.1.0%26crop%3Dfaces%26w%3D1552%26h%3D873%26fit%3Dcrop%26v%3D1479219233%26auto%3Dformat%26frame%3D1%26q%3D92%26s%3Dd8c8e37c0ed5f65b97557dd77e441059&imgrefurl=https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2F802007522%2Fup-squared-the-first-maker-board-with-intel-apollo&docid=hdDbuF0mF4AVzM&tbnid=rQVd58-OYexfgM%3A&vet=10ahUKEwjb-uLy_JDgAhUKsFQKHUnbC7wQMwhCKAIwAg..i&w=1552&h=873&bih=851&biw=1378&q=up%20squared&ved=0ahUKEwjb-uLy_JDgAhUKsFQKHUnbC7wQMwhCKAIwAg&iact=mrc&uact=8
+
+
+
+Using Tianocore source
+Open source EDK II plus open source binary obj. packages
+
 
 This lab shows the build process for an actual platform – UP Squared
 
@@ -96,7 +105,7 @@ Note:
 ---?image=/assets/images/slides/Slide6.JPG
 @title[Instructions for Lab Materials]
 ### <p align="right"><span class="gold" >Instructions for Lab Materials</span></p>
-<span style="font-size:0.9em">Directory `C:\PlatformBuildLab_FW\FW\PlatformBuildLab` </span>
+<span style="font-size:0.9em">Directory `C:\PlatformBuildLab_UP2_FW\FW\PlatformBuildLab` </span>
 <div class="left">
  <ul style="list-style-type:none">
    <li><span style="font-size:0.8em">FTDI Driver for Serial UART Cable (COM Port)  <a href="http://www.ftdichip.com/FTDrivers.htm "> ftdichip.com/FTDrivers.htm </a></span> </li>
@@ -284,6 +293,9 @@ Available from <a href="https://www.aaeon.com/">Aaeon </a> <br> order at: <a hre
 
 Note:
 
+https://www.google.com/imgres?imgurl=https%3A%2F%2Fksr-ugc.imgix.net%2Fassets%2F014%2F192%2F390%2Fb48b13570b839fdb254d046a4e5fe703_original.png%3Fixlib%3Drb-1.1.0%26crop%3Dfaces%26w%3D1552%26h%3D873%26fit%3Dcrop%26v%3D1479219233%26auto%3Dformat%26frame%3D1%26q%3D92%26s%3Dd8c8e37c0ed5f65b97557dd77e441059&imgrefurl=https%3A%2F%2Fwww.kickstarter.com%2Fprojects%2F802007522%2Fup-squared-the-first-maker-board-with-intel-apollo&docid=hdDbuF0mF4AVzM&tbnid=rQVd58-OYexfgM%3A&vet=10ahUKEwjb-uLy_JDgAhUKsFQKHUnbC7wQMwhCKAIwAg..i&w=1552&h=873&bih=851&biw=1378&q=up%20squared&ved=0ahUKEwjb-uLy_JDgAhUKsFQKHUnbC7wQMwhCKAIwAg&iact=mrc&uact=8
+
+
 -  Intel® Celerontm processor N3350 Series (Formerly Apollo Lake)
 
 
@@ -323,7 +335,7 @@ Note:
 ```
 $ git clone https://github.com/tianocore-training/PlatformBuildLab_UP2_FW.git
 ```
-<span style="font-size:0.9em" >Directory PlatformBuildLab_FW will be created</span>
+<span style="font-size:0.9em" >Directory PlatformBuildLab_UP2_FW will be created</span>
 ```
    FW 
     - PlatformBuildLab
@@ -354,7 +366,7 @@ NASM<br>
 <span style="font-size:0.8em">
 @color[#87E2A9](Additional Lab Setup -)</span><br>
 <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;
-@color[#87E2A9]( `PlatformLab_FW/FW/PlatformBuildLab`) 
+@color[#87E2A9]( `. . /FW/PlatformBuildLab`) 
 </span></p>
 
 @snapend
@@ -387,6 +399,12 @@ NASM<br>
 Note:
 - NASM
   -   `Copy …Lab_Material_FW\FW\Nasm to C:\`
+### Directories
+- MV3  		– UP Squared Project source code
+- iasl		– Iasl Assembler copy to platform tools
+- FTDI-Driver	– Driver for Seria/USB Uart cable
+- Nasm 		– Nasm Assembly compiler- Same as previous lab
+- TeraTerm	– TeraTerm application 
 
 
 
@@ -395,7 +413,7 @@ Note:
 @title[Preparing to Build]
 ### <p align="right"><span class="gold" >Preparing to Build</span></p>
 <p style="line-height:70%"><span style="font-size:0.8em">
-Directory `C:\PlatformBuildLab_FW\FW\PlatformBuildLab` from Download or zip
+Directory `C:\PlatformBuildLab_UP2_FW\FW\PlatformBuildLab` from Download or zip
 </span></p>
 
 @snap[north-west span-60 ]
@@ -557,11 +575,11 @@ Note:
 @box[bg-purple-pp text-white rounded my-box-pad2  ](<p style="line-height:70%" align="center"><span style="font-size:0.8em">Platform Build Scripts<br>&nbsp; </span></p>)
 <p style="line-height:80%"><span style="font-size:0.8em">Many Platforms have a bash or bat script file to pre or post process the EDK II build process</span></p>
 
-<p style="line-height:70%"><span style="font-size:0.7em">For UP Squared : `BuildBIOS.bat or BuildBIOS.sh` calls: <br></span>
+<p style="line-height:70%"><span style="font-size:0.7em">For UP Squared Broxton Platform : @color[#87E2A9](`BuildBIOS.bat`) or @color[#87E2A9](`BuildBIOS.sh`) calls: <br></span>
 <span style="font-size:0.7em"><br>
-&nbsp;&nbsp;`BuildIFWI` from the platform package directory <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.. Platform/BroxtonPlatformPkg` <br>
+&nbsp;&nbsp;@color[#87E2A9](`BuildIFWI`) from the platform package directory <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`.. Platform/BroxtonPlatformPkg` <br>
 &nbsp;&nbsp;&nbsp;&ndash; pre build processing <br>
-&nbsp;&nbsp;&nbsp;&ndash;  calls `BuildBxtBios` - a platform script to preform the EDK II `build` <br> 
+&nbsp;&nbsp;&nbsp;&ndash;  calls @color[#87E2A9](`BuildBxtBios`) - a platform script to preform the EDK II `build` <br> 
 &nbsp;&nbsp;&nbsp;&ndash; determines date <br>
 &nbsp;&nbsp;&nbsp;&ndash; board ID<br>
 &nbsp;&nbsp;&nbsp;&ndash; post build stitching<br>
@@ -768,7 +786,6 @@ Note:
 
 @snap[south-west span-100  ]
 <p style="line-height:80%" align="left"><span style="font-size:0.9em" >
-
 The platform build script post build process will stitch the multiple firmware volumes generated by the EDK II build process into the final <b> .BIN</b> image.<br><br>
 The script displays the location of the final <b>.BIN </b> file<br><br>
 </span></p>
