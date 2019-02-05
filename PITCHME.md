@@ -332,11 +332,11 @@ Note:
 <p style="line-height:80%" align="left"><span style="font-size:0.9em" >Download the PlatformBuildLab_UP2_FW.zip from : </span><br> @fa[github gp-bullet-white] <span style="font-size:0.7em"><a href="https://github.com/tianocore-training/PlatformBuildLab_UP2_FW/archive/master.zip">github.com PlatformBuildLab_UP2_FW.zip</a></span></p>
 
 <span style="font-size:0.9em" >OR<br>Use `git clone` to download the PlatformBuildLab_UP2_FW<span>
-```
+```bash
 $ git clone https://github.com/tianocore-training/PlatformBuildLab_UP2_FW.git
 ```
 <span style="font-size:0.9em" >Directory PlatformBuildLab_UP2_FW will be created</span>
-```
+```bash
    FW 
     - PlatformBuildLab
        - iasl				                   - Asl Compiler 
@@ -846,7 +846,7 @@ the platform setup is reached by typing F2 on a reboot
 
 <p style="line-height:80%"><span style="font-size:0.85em" >6.&nbsp;&nbsp;Boot into the UEFI Shell  then  type "FS0:"&nbsp;<br>7.&nbsp;&nbsp;Run update `.efi` utility with either BIN file </span> <span style="font-size:0.6em" >&lpar;<i>Note</i> the “TAB” Key <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;will fill out the command line for you &rpar;</span></p>
 
-```
+```bash
   FS0:\> FirmwareUpdateX64.efi UPBOARDA.X64.0071.R01.1809030927.bin
  
 ```
@@ -1001,7 +1001,7 @@ Note:
 <p style="line-height:90%"><span style="font-size:0.9em" >Search for your installation of Visual Studio (2013 or 2015)</span></p>
 <p style="line-height:90%"><span style="font-size:0.9em" >Update according to the path for where the RC.EXE is found </span></p>
 
-```
+```xml
 # Microsoft Visual Studio 2013 Professional Edition
 DEFINE WINSDK8_BIN       = c:\Program Files\Windows Kits\8.1\bin\x86\
 DEFINE WINSDK8x86_BIN    = c:\Program Files (x86)\Windows Kits\8.1\bin\x64
